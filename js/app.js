@@ -72,6 +72,10 @@ class Player {
         }
         if(this.life==false){
     //console.log(this.x);
+            if(this.score>0){
+              this.score--;
+              document.querySelector('#score').innerHTML=this.score;
+            }
             this.y=300;
             this.life=true;
         }
@@ -184,12 +188,13 @@ function key(e){
     player.handleInput(allowedKeys[e.keyCode]);
 }
 
+//start function
 function start() {
     player.score=0;
     closeModal();
     clearInterval(t);
     document.querySelector('#score').innerHTML=player.score;
-    sec=30,min=0;
+    sec=30,min=1;
     timer();
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
