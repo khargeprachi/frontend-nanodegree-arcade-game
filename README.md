@@ -23,6 +23,13 @@ The game ends when timer is stopped.
 
 The number of wins is displayed in the end.
 
+To start:
+1.Download all the files in one directory. 
+2.Open any browser. 
+3.Open 'index.html' file in broswer window. 
+4.Click on start game. 
+
+ 
 ## Contributing
 
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
